@@ -1,6 +1,6 @@
-## Getting Started
+## Projeto Java - Desafio Dio
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Desafio de projeto na Dio, visando praticar Programação Orientada a Objetos, uso de Collections no Java e uso da StreamAPI.  
 
 ## Folder Structure
 
