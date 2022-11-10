@@ -4,8 +4,8 @@ import java.time.LocalDate;
 import java.util.*;
 
 public class Bootcamp {
-    private String name;
-    private String description;
+    private String nome;
+    private String descricao;
     private final LocalDate initialDate = LocalDate.now();
     private final LocalDate finalDate = initialDate.plusDays(45);
     private Set<Aluno> alunos = new HashSet<>();
@@ -14,14 +14,14 @@ public class Bootcamp {
     public Bootcamp() {
     }
 
-    public Bootcamp(String name, String description) {
-        this.name = name;
-        this.description = description;
+    public Bootcamp(String nome, String descricao) {
+        this.nome = nome;
+        this.descricao = descricao;
     }
 
-    public Bootcamp(String name, String description, Set<Aluno> alunos, Set<Conteudo> conteudos) {
-        this.name = name;
-        this.description = description;
+    public Bootcamp(String nome, String descricao, Set<Aluno> alunos, Set<Conteudo> conteudos) {
+        this.nome = nome;
+        this.descricao = descricao;
         this.alunos = alunos;
         this.conteudos = conteudos;
     }
@@ -35,19 +35,19 @@ public class Bootcamp {
     }
 
     public String getName() {
-        return name;
+        return nome;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.nome = name;
     }
 
     public String getDescription() {
-        return description;
+        return descricao;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.descricao = description;
     }
 
     public LocalDate getInitialDate() {
@@ -78,8 +78,8 @@ public class Bootcamp {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ((name == null) ? 0 : name.hashCode());
-        result = prime * result + ((description == null) ? 0 : description.hashCode());
+        result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+        result = prime * result + ((descricao == null) ? 0 : descricao.hashCode());
         result = prime * result + ((initialDate == null) ? 0 : initialDate.hashCode());
         result = prime * result + ((finalDate == null) ? 0 : finalDate.hashCode());
         result = prime * result + ((alunos == null) ? 0 : alunos.hashCode());
@@ -96,15 +96,15 @@ public class Bootcamp {
         if (getClass() != obj.getClass())
             return false;
         Bootcamp other = (Bootcamp) obj;
-        if (name == null) {
-            if (other.name != null)
+        if (nome == null) {
+            if (other.nome != null)
                 return false;
-        } else if (!name.equals(other.name))
+        } else if (!nome.equals(other.nome))
             return false;
-        if (description == null) {
-            if (other.description != null)
+        if (descricao == null) {
+            if (other.descricao != null)
                 return false;
-        } else if (!description.equals(other.description))
+        } else if (!descricao.equals(other.descricao))
             return false;
         if (initialDate == null) {
             if (other.initialDate != null)

@@ -4,15 +4,15 @@ import java.util.*;
 
 public class Aluno {
 
-    private String name;
+    private String nome;
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
     public Aluno() {
     }
 
-    public Aluno(String name) {
-        this.name = name;
+    public Aluno(String nome) {
+        this.nome = nome;
     }
 
     public void inscreverBootcamp(Bootcamp bootcamp) {
@@ -45,11 +45,11 @@ public class Aluno {
     }
 
     public String getName() {
-        return name;
+        return nome;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.nome = name;
     }
 
     public Set<Conteudo> getConteudosInscritos() {
@@ -92,7 +92,7 @@ public class Aluno {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + ((nome == null) ? 0 : nome.hashCode());
         result = prime * result + ((conteudosInscritos == null) ? 0 : conteudosInscritos.hashCode());
         result = prime * result + ((conteudosConcluidos == null) ? 0 : conteudosConcluidos.hashCode());
         return result;
@@ -107,10 +107,10 @@ public class Aluno {
         if (getClass() != obj.getClass())
             return false;
         Aluno other = (Aluno) obj;
-        if (name == null) {
-            if (other.name != null)
+        if (nome == null) {
+            if (other.nome != null)
                 return false;
-        } else if (!name.equals(other.name))
+        } else if (!nome.equals(other.nome))
             return false;
         if (conteudosInscritos == null) {
             if (other.conteudosInscritos != null)

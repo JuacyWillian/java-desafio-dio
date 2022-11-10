@@ -3,8 +3,8 @@ package org.juacywillian.dominio;
 public abstract class Conteudo {
 
     public static final double XP_PADRAO = 10d;
-    private String title;
-    private String description;
+    private String titulo;
+    private String descricao;
 
     abstract double calcularXP();
 
@@ -13,19 +13,19 @@ public abstract class Conteudo {
     }
 
     public String getTitle() {
-        return title;
+        return titulo;
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.titulo = title;
     }
 
     public String getDescription() {
-        return description;
+        return descricao;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.descricao = description;
     }
 
 }
