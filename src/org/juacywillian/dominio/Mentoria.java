@@ -35,6 +35,6 @@ public class Mentoria extends Conteudo {
                     titulo = %s,
                     descrição = %s,
                     data = %s
-                }\n""", getTitle(), getDescription(), data.toString());
+                }\n""", getTitulo(), getDescricao(), data.toString());
     }
 }

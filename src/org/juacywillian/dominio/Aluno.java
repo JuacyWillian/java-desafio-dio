@@ -58,7 +58,7 @@ public class Aluno {
 
     public String getConteudosInscritosString() {
         return conteudosInscritos.stream()
-                .map(c -> c.getTitle())
+                .map(c -> c.getTitulo())
                 .toList()
                 .toString()
                 .replaceAll(", ", "\n\t")
@@ -76,7 +76,7 @@ public class Aluno {
 
     public String getConteudosConcluidosString() {
         return conteudosConcluidos.stream()
-                .map(c -> c.getTitle())
+                .map(c -> c.getTitulo())
                 .toList()
                 .toString()
                 .replaceAll(", ", "\n\t")
