@@ -12,20 +12,19 @@ public abstract class Conteudo {
         return XP_PADRAO;
     }
 
-    public String getTitle() {
+    public String getTitulo() {
         return titulo;
     }
 
-    public void setTitle(String title) {
-        this.titulo = title;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
-    public String getDescription() {
+    public String getDescricao() {
         return descricao;
     }
 
-    public void setDescription(String description) {
-        this.descricao = description;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
-
 }

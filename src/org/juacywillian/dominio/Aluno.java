@@ -48,7 +48,7 @@ public class Aluno {
         return nome;
     }
 
-    public void setName(String name) {
+    public void setNome(String name) {
         this.nome = name;
     }
 

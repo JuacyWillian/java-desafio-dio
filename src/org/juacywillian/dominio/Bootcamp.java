@@ -6,8 +6,8 @@ import java.util.*;
 public class Bootcamp {
     private String nome;
     private String descricao;
-    private final LocalDate initialDate = LocalDate.now();
-    private final LocalDate finalDate = initialDate.plusDays(45);
+    private final LocalDate dataInicial = LocalDate.now();
+    private final LocalDate dataFinal = dataInicial.plusDays(45);
     private Set<Aluno> alunos = new HashSet<>();
     private Set<Conteudo> conteudos = new LinkedHashSet<>();
 
@@ -46,16 +46,16 @@ public class Bootcamp {
         return descricao;
     }
 
-    public void setDescription(String description) {
+    public void setDescricao(String description) {
         this.descricao = description;
     }
 
-    public LocalDate getInitialDate() {
-        return initialDate;
+    public LocalDate getDataInicial() {
+        return dataInicial;
     }
 
-    public LocalDate getFinalDate() {
-        return finalDate;
+    public LocalDate getDataFinal() {
+        return dataFinal;
     }
 
     public Set<Aluno> getAlunos() {
@@ -80,8 +80,8 @@ public class Bootcamp {
         int result = 1;
         result = prime * result + ((nome == null) ? 0 : nome.hashCode());
         result = prime * result + ((descricao == null) ? 0 : descricao.hashCode());
-        result = prime * result + ((initialDate == null) ? 0 : initialDate.hashCode());
-        result = prime * result + ((finalDate == null) ? 0 : finalDate.hashCode());
+        result = prime * result + ((dataInicial == null) ? 0 : dataInicial.hashCode());
+        result = prime * result + ((dataFinal == null) ? 0 : dataFinal.hashCode());
         result = prime * result + ((alunos == null) ? 0 : alunos.hashCode());
         result = prime * result + ((conteudos == null) ? 0 : conteudos.hashCode());
         return result;
@@ -106,15 +106,15 @@ public class Bootcamp {
                 return false;
         } else if (!descricao.equals(other.descricao))
             return false;
-        if (initialDate == null) {
-            if (other.initialDate != null)
+        if (dataInicial == null) {
+            if (other.dataInicial != null)
                 return false;
-        } else if (!initialDate.equals(other.initialDate))
+        } else if (!dataInicial.equals(other.dataInicial))
             return false;
-        if (finalDate == null) {
-            if (other.finalDate != null)
+        if (dataFinal == null) {
+            if (other.dataFinal != null)
                 return false;
-        } else if (!finalDate.equals(other.finalDate))
+        } else if (!dataFinal.equals(other.dataFinal))
             return false;
         if (alunos == null) {
             if (other.alunos != null)

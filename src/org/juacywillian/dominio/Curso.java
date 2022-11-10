@@ -7,8 +7,8 @@ public class Curso extends Conteudo {
     }
 
     public Curso(String titulo, String descrição, int cargaHoraria) {
-        setTitle(titulo);
-        setDescription(descrição);
+        setTitulo(titulo);
+        setDescricao(descrição);
         this.cargaHoraria = cargaHoraria;
     }
 
@@ -32,6 +32,6 @@ public class Curso extends Conteudo {
                     titulo = %s
                     descrição = %s
                     carga horaria = %d
-                }\n""", getTitle(), getDescription(), cargaHoraria);
+                }\n""", getTitulo(), getDescricao(), cargaHoraria);
     }
 }
